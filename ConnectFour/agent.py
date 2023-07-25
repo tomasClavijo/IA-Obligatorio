@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from board import Board
 
-class Agent(ABC):
-
+class Agent(ABC):    
+        
     @abstractmethod
     def next_action(self, obs):
         return NotImplementedError
@@ -26,4 +26,3 @@ class InputAgent(Agent):
     def heuristic_utility(self, board: Board):
         return 0
     
-        

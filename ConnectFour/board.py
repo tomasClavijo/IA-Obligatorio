@@ -29,6 +29,10 @@ class Board:
     def winner(self):
         return self._winner
     
+    @property
+    def grid(self):
+        return self._grid
+    
     def _set_last_modified_cell(self, x_value, y_value):
         self._last_modified_cell[x] = x_value
         self._last_modified_cell[y] = y_value
